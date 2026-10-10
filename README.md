@@ -63,11 +63,15 @@ Kufizimet e iCal: sinkronizohen vetëm datat, jo emrat e mysafirëve dhe as çmi
 - Tarifa e pastrimit mbetet te menaxhimi.
 - Raportet mujore ndajnë qëndrimet që kalojnë nga një muaj në tjetrin sipas numrit të netëve në secilin muaj.
 
-## Vendosja online
+## Vendosja online (Vercel + Neon, falas)
 
-- Funksionon në çdo server me Node.js 20+ dhe PostgreSQL: `npm run build && npm start`.
-- Fotot ruhen te `public/uploads`. Në hosting pa disk të përhershëm (p.sh. Vercel) duhet ndërruar `src/lib/storage.ts` me S3 ose Cloudinary.
-- Vendosni `APP_URL` me domain-in real, sepse përdoret te linket iCal dhe te mesazhet WhatsApp.
+1. **Neon** (neon.tech): krijoni një projekt në rajonin *AWS Europe Central 1 (Frankfurt)* dhe kopjoni connection string-un.
+2. **Cloudinary** (cloudinary.com): kopjoni `CLOUDINARY_URL` nga Dashboard → API Keys.
+3. **Vercel** (vercel.com): *Add New → Project*, importoni repo-n dhe shtoni variablat e mjedisit:
+   `DATABASE_URL`, `AUTH_SECRET` (një tekst i gjatë i rastësishëm), `CRON_SECRET`, `CLOUDINARY_URL`.
+4. Pas publikimit, hapni linkun. Faqja `/setup` ofron krijimin e të dhënave demo ose vetëm të administratorit, dhe funksionon vetëm një herë.
+
+Gjatë build-it, `vercel-build` krijon ose përditëson tabelat automatikisht. Në një server të zakonshëm: `npm run build && npm start`. Fotot ruhen në Cloudinary kur `CLOUDINARY_URL` është vendosur, përndryshe te `public/uploads`.
 
 ## Testet
 

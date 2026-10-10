@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import type { PropertyType } from "@prisma/client";
 import { db } from "@/lib/db";
 import { getT } from "@/lib/i18n";
@@ -16,6 +17,7 @@ type SP = Promise<Record<string, string | undefined>>;
 
 export default async function HomePage({ searchParams }: { searchParams: SP }) {
   const sp = await searchParams;
+  if ((await db.user.count()) === 0) redirect("/setup");
   const { t, locale } = await getT();
   const start = today();
   const checkIn = parseISODate(sp.in);

@@ -27,6 +27,14 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
           <div className="w-full max-w-sm">
             <h1 className="text-3xl font-semibold tracking-tight">{t.login.title}</h1>
             <p className="text-muted mt-2 mb-8">{t.login.subtitle}</p>
+            {sp.setup === "demo" && (
+              <p className="text-sm card bg-emerald-50 border-emerald-200 text-emerald-800 p-3 mb-4">
+                ✓ Të dhënat demo u krijuan. Hyni me admin@palasa.al / admin123
+              </p>
+            )}
+            {sp.setup === "admin" && (
+              <p className="text-sm card bg-emerald-50 border-emerald-200 text-emerald-800 p-3 mb-4">✓ Administratori u krijua.</p>
+            )}
             {sp.error === "forbidden" && <p className="text-sm text-red-600 mb-4">{t.login.forbidden}</p>}
             <LoginForm
               next={sp.next ?? ""}
