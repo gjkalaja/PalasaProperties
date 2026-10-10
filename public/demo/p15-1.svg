@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800"><defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a3557"/><stop offset="1" stop-color="#8d7aa0"/></linearGradient><linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#27365a"/><stop offset="1" stop-color="#141d36"/></linearGradient><linearGradient id="pool" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd6e8"/><stop offset="1" stop-color="#2aa3c4"/></linearGradient></defs><rect width="1200" height="800" fill="url(#sky)"/>
+     <circle cx="620.2494552358985" cy="300.8593211695552" r="34" fill="#ffe7b0" opacity="1"/>
+     <path d="M0 440.8593211695552 C 200 350.8593211695552, 380 400.8593211695552, 520 420.8593211695552 S 900 330.8593211695552, 1200 410.8593211695552 V 440.8593211695552 Z" fill="#3c4462" opacity=".7"/>
+     <rect y="440.8593211695552" width="1200" height="359.1406788304448" fill="url(#sea)"/>
+     <rect y="680.8593211695552" width="1200" height="119.14067883044481" fill="#7d7590"/>
+     <rect x="546.978374844417" y="390.8593211695552" width="337.59970946609974" height="100" fill="#d9d4cc"/>
+    <rect x="586.365007615462" y="415.8593211695552" width="225.06647297739983" height="55" fill="#ffd889" opacity=".85"/>
+    <rect x="518.845065722242" y="384.8593211695552" width="393.8663277104497" height="10" fill="#bdb6ab"/>
+     <rect x="350.0452109891921" y="480.8593211695552" width="562.6661824434996" height="210" fill="#e3ded6"/>
+     <rect x="340.0452109891921" y="474.8593211695552" width="582.6661824434996" height="12" fill="#bdb6ab"/>
+     <rect x="390.0452109891921" y="550.8593211695552" width="136.8887274811665" height="120" rx="2" fill="#ffd889" opacity="0.9"/><rect x="550.9339384703586" y="550.8593211695552" width="136.8887274811665" height="120" rx="2" fill="#ffd889" opacity="0.9"/><rect x="711.8226659515251" y="550.8593211695552" width="136.8887274811665" height="120" rx="2" fill="#ffd889" opacity="0.9"/>
+     <ellipse cx="266.90495845861733" cy="612.5731472391635" rx="18.46563061606139" ry="98.28617393039167" fill="#1d2a2a"/><ellipse cx="1002.7113934326917" cy="596.0752716939896" rx="19.409405199810863" ry="114.78404947556555" fill="#1d2a2a"/><ellipse cx="1052.7113934326917" cy="606.8151677493006" rx="21.587185227312148" ry="104.04415342025459" fill="#1d2a2a"/>
+     
+     </svg>

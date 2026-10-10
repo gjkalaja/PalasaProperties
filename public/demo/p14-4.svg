@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800"><defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9e7f0"/><stop offset="1" stop-color="#f7f3ea"/></linearGradient><linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6aa8bf"/><stop offset="1" stop-color="#3a7891"/></linearGradient></defs><rect width="1200" height="800" fill="#f3efe9"/>
+     <rect x="820" y="120" width="260" height="360" fill="url(#sky)"/>
+     <rect x="820" y="330" width="260" height="150" fill="url(#sea)"/>
+     <rect x="815" y="115" width="270" height="370" fill="none" stroke="#3a3a3a" stroke-width="8"/>
+     <rect y="640" width="1200" height="160" fill="#cdbfa9"/>
+     <rect x="170" y="300" width="560" height="200" rx="14" fill="#cbbba3"/>
+     <rect x="140" y="470" width="620" height="170" rx="18" fill="#f5f1ea"/>
+     <rect x="140" y="560" width="620" height="80" rx="10" fill="#a8b89a"/>
+     <rect x="200" y="420" width="200" height="80" rx="24" fill="#ffffff"/>
+     <rect x="500" y="420" width="200" height="80" rx="24" fill="#ffffff"/>
+     <rect x="40" y="520" width="80" height="120" rx="6" fill="#bda88b"/>
+     <circle cx="80" cy="470" r="34" fill="#f2e2c4"/>
+     <rect x="76" y="490" width="8" height="30" fill="#3a3a3a"/></svg>
